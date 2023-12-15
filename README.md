@@ -1,12 +1,10 @@
 # PHP-IDOR-Samples
 
 ``
-**My php sucks I know :D**
+My php sucks I know :D
 ``
 
-**
-These two code samples one of them with IDOR(insecure direct object references) vulnerability after learning about it on TryHackMe(Owasp top 10)
-**
+**These two code samples one of them with IDOR(insecure direct object references) vulnerability after learning about it on TryHackMe(Owasp top 10)**
 
 ## Data Scheme
 
@@ -16,17 +14,20 @@ Database name - idor;
 MariaDB [idor]> show tables;
 ``
 
+```
 +----------------+
 | Tables_in_idor |
 +----------------+
 | users          |
 +----------------+
+```
 
 
 ``sql
 MariaDB [idor]> describe users;
 ``
 
+```
 +----------+--------------+------+-----+---------+----------------+
 | Field    | Type         | Null | Key | Default | Extra          |
 +----------+--------------+------+-----+---------+----------------+
@@ -36,3 +37,5 @@ MariaDB [idor]> describe users;
 | password | varchar(255) | YES  |     | NULL    |                |
 | secret   | varchar(255) | YES  |     | NULL    |                |
 +----------+--------------+------+-----+---------+----------------+
+
+```
